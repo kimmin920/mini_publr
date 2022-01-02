@@ -1,0 +1,69 @@
+{
+  "template": "COVER_A",
+  "data": {
+    "mainTitle1": {
+      "type": "text",
+      "value": "SOUND",
+      "options": {},
+      "style": {
+        "color": "#50FF0E",
+        "fontFamily": "'Rubik Mono One', sans-serif"
+      }
+    },
+    "mainTitle2": {
+      "type": "text",
+      "value": "OFF",
+      "options": {},
+      "style": {
+        "color": "#50FF0E",
+        "fontFamily": "'Rubik Mono One', sans-serif"
+      }
+    },
+    "img1": {
+      "type": "image",
+      "value": "/src/sample_img.png",
+      "options": {},
+      "style": {}
+    },
+    "bgColor1": {
+      "type": "bgColor",
+      "value": "#6C56FD",
+      "options": {},
+      "style": {}
+    },
+    "subTitle1": {
+      "type": "text",
+      "value": "LIVE interview with recording artist",
+      "options": {},
+      "style": {}
+    },
+    "subTitle2": {
+      "type": "text",
+      "value": "on Instagram Stories",
+      "options": {},
+      "style": {}
+    },
+    "kicker1": {
+      "type": "text",
+      "value": "Samson James",
+      "options": {},
+      "style": {
+        "color": "#50FF0E"
+      }
+    },
+    "kicker2": {
+      "type": "text",
+      "value": "Thursday, 9pm PT",
+      "options": {},
+      "style": {
+        "color": "#50FF0E"
+      }
+    },
+    "copyright1": {
+      "type": "text",
+      "value": "@PUBL-station",
+      "options": {},
+      "style": {}
+    }
+  }
+}
