@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import styled from 'styled-components';
-import JsonViewerAndEditor from './JsonViewerAndEditor';
-import { MagazineList } from './MagazineList';
+import { useState } from "react";
+import styled from "styled-components";
+import DragDrop from "./DragDrop/DragDrop";
+import JsonViewerAndEditor from "./JsonViewerAndEditor";
+import { MagazineList } from "./MagazineList";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -17,18 +18,22 @@ function App() {
           <S_CenterWrapper>
             <S_Title>Build amazing magazine</S_Title>
             <S_ButtonWrapper>
-              <S_Button onClick={() => onClick('JSON_VIEWER')}>
+              <S_Button onClick={() => onClick("JSON_VIEWER")}>
                 JSON VIEWER
               </S_Button>
-              <S_Button onClick={() => onClick('MAGAZINE')}>
+              <S_Button onClick={() => onClick("MAGAZINE")}>
                 MAGAZINE_TEMP
+              </S_Button>
+              <S_Button onClick={() => onClick("DRAG_DROP")}>
+                DRAG_DROP
               </S_Button>
             </S_ButtonWrapper>
           </S_CenterWrapper>
         </S_Main>
       )}
-      {selectedProject === 'JSON_VIEWER' && <JsonViewerAndEditor />}
-      {selectedProject === 'MAGAZINE' && <MagazineList />}
+      {selectedProject === "JSON_VIEWER" && <JsonViewerAndEditor />}
+      {selectedProject === "MAGAZINE" && <MagazineList />}
+      {selectedProject === "DRAG_DROP" && <DragDrop />}
     </S_App>
   );
 }
@@ -56,7 +61,7 @@ const S_Button = styled.button`
   cursor: pointer;
 `;
 const S_Title = styled.h1`
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 5rem;
   text-align: center;

@@ -1,0 +1,39 @@
+.sortable-ghost {
+  color: white;
+  cursor: grabbing;
+}
+
+.sortable-drag {
+  background-color: #eeeeeebe !important;
+}
+
+.sortable-drag > div {
+  visibility: hidden;
+}
+
+.MuiPaper-root {
+  cursor: grab;
+}
+
+.sortable-chosen {
+  cursor: grabbing;
+}
+
+.sortable-chosen > .side-handle {
+  visibility: hidden;
+}
+
+.sortable-chosen > .card {
+}
+
+.cardContainer:hover .moreIcon {
+  opacity: 1 !important;
+}
+
+.cardContainer:hover {
+  background-color: ivory;
+}
+
+.moreIcon:hover {
+  cursor: pointer;
+}
